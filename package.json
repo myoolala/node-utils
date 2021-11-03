@@ -1,0 +1,25 @@
+{
+  "name": "node-utils",
+  "version": "0.0.1",
+  "description": "Basic utils to be used for everyday node situations",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myoolala/node-utils.git"
+  },
+  "keywords": [
+    "util"
+  ],
+  "author": "Peter Grasso",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/myoolala/node-utils/issues"
+  },
+  "homepage": "https://github.com/myoolala/node-utils#readme",
+  "devDependencies": {
+    "mocha": "^9.1.3"
+  }
+}
