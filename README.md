@@ -13,6 +13,12 @@ Wraps the wait function and returns a function that returns promise that resolve
 waitAndPass(1000)('Done!').then((data) => console.log(data));
 Done!
 ```
+The main intention is to allow for chaining in promises more cleanly
+```
+https.get(dataUrl)
+.then(waitAndPass(500))
+.then(render)
+```
 ### wrapPromise
 Wraps the promise passed to it such that it always resolves to an array in a similar manner to the old callbacks
 ```

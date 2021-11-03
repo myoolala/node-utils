@@ -1,7 +1,7 @@
 {
-  "name": "node-utils",
+  "name": "lite-utils",
   "version": "0.0.1",
-  "description": "Basic utils to be used for everyday node situations",
+  "description": "Basic utils to be used for everyday node situations I found myself in",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
