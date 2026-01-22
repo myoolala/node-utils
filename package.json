@@ -1,6 +1,6 @@
 {
   "name": "lite-utils",
-  "version": "0.0.3",
+  "version": "0.1.1",
   "description": "Basic utils to be used for everyday node situations I found myself in",
   "main": "index.js",
   "scripts": {
