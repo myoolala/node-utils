@@ -1,13 +1,17 @@
 # node-utils
+
 Generic node utils I wish I had in apps when developing various apps
 
 ## Functions
+
 ### wait
+
 Wraps the set timeout function and returns a promise that resolves when the timeout finishes.
 ```
 wait(1000).then(() => console.log('Done!'));
 ```
 ### waitAndPass
+
 Wraps the wait function and returns a function that returns promise that resolves when the timeout finishes with the information passed to the wrapper function.
 ```
 waitAndPass(1000)('Done!').then((data) => console.log(data));
@@ -20,6 +24,7 @@ https.get(dataUrl)
 .then(render)
 ```
 ### wrapPromise
+
 Wraps the promise passed to it such that it always resolves to an array in a similar manner to the old callbacks
 ```
 let [err, data] = await wrapPromise(Promise.resolve('Done!'));
@@ -27,5 +32,19 @@ let [err, data] = await wrapPromise(Promise.resolve('Done!'));
 ```
 let [err, data] = await wrapPromise(Promise.reject('Done!'));
 ```
+
+## Classes
+
+### Logger
+
+A very small and lightweight logger meant to provide minimal functionality.
+
+```
+const { Logger } = require('node-utils');
+const logger = Logger({level: 'INFO'});
+
+logger.info('Test');
+```
+
 ## Tests
 Clone, npm install && npm run test
